@@ -17,7 +17,7 @@
 
 body {
     height: 100vh;
-    background-image: url(/img/background2.jpg);
+    background-image: url(https://github.com/VerissimoMoises/todo-list/blob/3bb41840f4b8876a0b28acdfac78d0c6cca3ea45/img/background2.jpg);
     background-position: right;
     background-size: cover;
     display: flex;
