@@ -1,0 +1,183 @@
+/* Geral */
+
+:root {
+    --black-grey: #333;
+    --berkeley-blue: #1D3557;
+    --cerulean: #457B9D;
+    --white: #fff;
+    --background: #F1FAEE;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+    color: var(--black-grey);
+}
+
+body {
+    height: 100vh;
+    background-image: url(/img/background2.jpg);
+    background-position: right;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+button {
+    background-color: #fdfdfd;
+    color: var(--berkeley-blue);
+    border: 2px solid var(--berkeley-blue);
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: var(--berkeley-blue);
+    color: var(--white);
+}
+
+button:hover > i {
+    color: var(--white);
+}
+
+button i {
+    color: var(--berkeley-blue);
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input, select {
+    padding: .25rem 0.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+/* To Do header */
+.todo-container {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    background-color: var(--background);
+    max-width: 450px;
+    width: 450px;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 8px var(--cerulean);   
+    border: ridge 8px var(--cerulean); 
+}
+
+.todo-container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 4px solid var(--cerulean);
+}
+
+.todo-container header h1 {
+    color: var(--berkeley-blue);
+    font-size: 2.8rem;
+}
+
+/* To Do form */
+#todo-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 4px solid var(--cerulean);
+}
+
+#todo-form p, 
+#edit-form p {
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: 0.3rem;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+}
+
+/* To Do toolbar */
+
+/* #toolbar {
+    padding: 1rem;
+    border-bottom: 4px solid var(--cerulean);
+    display: flex;
+}
+
+#toolbar h4 {
+    margin-bottom: 0.5rem;
+}
+
+#search {
+    border-right: 2px solid var(--cerulean);
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+    flex: 1;
+} */
+
+/* To Do List */
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--cerulean);
+    transition: 0.3s;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+    color: var(--black-grey); 
+    text-decoration: underline;
+}
+
+.todo button {
+    margin-left: 0.4rem;
+}
+
+.done {
+    background-color: var(--cerulean);
+    border-bottom: 1px solid var(--white);
+}
+
+.done h3 {
+    color: var(--white);
+    text-decoration: line-through;
+    font-style: italic;
+}
