@@ -17,9 +17,9 @@
 
 body {
     height: 100vh;
-    background: var(--cerulean);
-/*     background-position: right;
-    background-size: cover; */
+    background-image: url(img/background2.jpg);
+    background-position: right;
+    background-size: cover;
     display: flex;
     justify-content: end;
     align-items: center;
